@@ -1,0 +1,303 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 2px solid rgb(128, 126, 126);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+    
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+    color: #000000;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  .form
+  {
+    position: relative;
+    left: 550px;
+    background-color: #fff;
+   
+
+  }
+  #lastname
+  {
+    width: 80%;
+    position: relative;
+    left: 20px;
+  }
+  #lastnamelable
+  {
+    left: 30px;
+  }
+  .Userlist
+  {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ max-width: 1360px;
+ flex-wrap: wrap;
+  
+    background-color: transparent;
+    padding: 20px;
+    position: relative;
+    left: 60px;
+    top: 10px;
+    box-shadow: 20px 20px 60px  rgb(137, 134, 134),inset -20px -20px 60px rgb(255, 255, 255);
+    border-radius: 20px;
+    
+  }
+  .Userlist .user
+  {
+background-color: rgb(255, 255, 255);
+width: 400px;
+height: 350px;
+margin-left: 30px;
+margin-top: 30px;
+border-radius: 20px;
+box-shadow: 20px 20px 60px  rgb(137, 134, 134),inset -20px -20px 60px rgb(255, 255, 255);
+
+
+  }
+  .Userlist .user:hover
+  {
+scale: 1.1;
+transition: 0.3s linear;
+border: 2px solid black;
+  }
+  .Userlist .user #welcome
+  {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -220px;
+    margin-top: 10px;
+    color: rgb(12, 62, 17);
+    text-transform: capitalize;
+    
+  }
+  img{
+    width:120px ;
+    height: 120px;
+    margin-top: -10px;
+    border-radius: 20px;
+    border: 2px solid royalblue;
+  }
+  #name
+  {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    color: #007bff;
+    margin-top: -4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #other
+  {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 40px;
+    font-size: 18px;
+    text-align: start;
+    margin-top: -10px;
+  }
+  #span
+  {
+    color: rgb(12, 62, 17);
+    margin-left: -10px;
+    font-size: 20px;
+  }
+  #community
+  {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 30px;
+   color: #000000;
+  
+  }
+  #btn
+  {
+    border-radius: 20px;
+    /* color: #007bff; */
+  }
+  .landing-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+    background-image: url(stacked-waves-haikei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .landing-background {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    position: relative;
+    top: 120px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .overlay h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .create-button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .create-button:hover {
+    background-color: #ffffff;
+ 
+    border: 1px solid #007bff;
+    color: #007bff;
+  }
+  
